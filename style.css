@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vmin;
+    color: rgb(13, 13, 116);
+    background-color: rgb(128, 177, 251);
+}
+
+.heading:hover{
+    color: rgb(18, 49, 143);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    position: relative;
+    margin-top: 5vmin;
+}
+
+.pic,img{
+    height: 23vmin;
+    width: 23vmin;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+}
+
+.pic :hover{
+    border: 3px solid rgb(14, 45, 133);
+    opacity: 0.8;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20vmin;
+    margin-top: 7vmin;
+    font-size: 7vmin;
+}
+
+.yourscore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vmin;
+    width: 15vmin;
+    font-size: 9vmin;
+}
+
+.compscore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vmin;
+    width: 15vmin;
+    font-size: 9vmin;
+}
+
+.score-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28vmin;
+    font-size: 4vmin;
+}
+
+.yourturn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vmin;
+    width: 15vmin;
+}
+
+.compturn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vmin;
+    width: 15vmin; 
+}
+
+
+.pick-move{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.display-para{
+    border-radius: 2vmin;
+    height: 7vh;
+    width: 51vh;
+    color: rgb(250, 250, 251);
+    font-weight: 600;
+    font-size: 3vmin;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vmin; 
+    cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.8;
+    border: 2px solid rgb(7, 7, 57);
+}
+
+.footer{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 95%;
+    color: rgb(20, 26, 60);
+    font-size: 2.5vmin;
+    font-weight: bold;
+    background-color: rgb(215, 169, 235);
+}
+
+@media (max-width: 400px) {
+    .icon,.img{
+     margin-top: 20vmin;
+    }
+
+    .score{
+        margin-top: 20vmin;
+    }
+
+    .your,.comp{
+        font-size: 7vmin;
+    }
+
+    .youscore,.compscore{
+        font-size: 10vmin;
+    }
+
+    .display-para{
+        height: 9vmin;
+        width: 75vmin;
+        font-size: 4vmin;
+        margin-top: 15vmin;
+    }
+  }
+
